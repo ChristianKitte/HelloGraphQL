@@ -5,9 +5,18 @@
     <projectFile profileName="HelloGraphQL">HelloGraphQL/HelloGraphQL.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de7425d6-3c80-4219-a923-cc5c9f64ee85" name="Changes" comment="InitialCode">
-      <change afterPath="$PROJECT_DIR$/HelloGraphQL/packages.config" afterDir="false" />
+    <list default="true" id="de7425d6-3c80-4219-a923-cc5c9f64ee85" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/HelloGraphQL/GraphQL/Query.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloGraphQL/HelloGraphQL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HelloGraphQL/HelloGraphQL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloGraphQL/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HelloGraphQL/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloGraphQL/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/HelloGraphQL/appsettings.Development.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +111,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1629741618835</updated>
-      <workItem from="1629741622788" duration="9619000" />
+      <workItem from="1629741622788" duration="9926000" />
+      <workItem from="1629828467543" duration="4669000" />
     </task>
     <task id="LOCAL-00001" summary="Inital Code">
       <created>1629752154032</created>
@@ -125,14 +135,21 @@
       <option name="project" value="LOCAL" />
       <updated>1629752559417</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="InitialCode">
+      <created>1629754609390</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1629754609390</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -144,6 +161,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
