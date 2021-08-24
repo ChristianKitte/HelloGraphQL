@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GraphQL.Server.Ui.Voyager;
 using HelloGraphQL.Data;
+using HelloGraphQL.GraphQL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -28,6 +30,12 @@ namespace HelloGraphQL
         {
             services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer
                 (Configuration.GetConnectionString("ConStr")));
+
+            // Hinzufügen des GraphQL Server und der erstellten
+            // Klasse Queries
+            services
+                .AddGraphQLServer()
+                .AddQueryType<Queries>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,9 +48,13 @@ namespace HelloGraphQL
 
             app.UseRouting();
 
-            app.UseEndpoints(endpoints =>
+            // Fügt eine Endpointmiddleware für GraphQL hinzu
+            app.UseEndpoints(endpoints => { endpoints.MapGraphQL(); });
+            
+            // Fügt eine Endpointmiddleware für Voyager hinzu
+            app.UseGraphQLVoyager(new VoyagerOptions()
             {
-                endpoints.MapGet("/", async context => { await context.Response.WriteAsync("Hello World!"); });
+                GraphQLEndPoint = "/graphql"
             });
         }
     }
