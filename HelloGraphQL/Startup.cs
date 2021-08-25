@@ -28,14 +28,21 @@ namespace HelloGraphQL
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer
+            //Neue Instanzen erzeugen und einem Pool zur Wiederverwendung hinzufügen. In NET 5 eingefügt und
+            //für Blazor Apps empfohlen
+            services.AddPooledDbContextFactory<AppDbContext>(opt => opt.UseSqlServer
                 (Configuration.GetConnectionString("ConStr")));
+
+            //Nicht Fähig zu Multithreading !
+            //services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer
+            //    (Configuration.GetConnectionString("ConStr")));
 
             // Hinzufügen des GraphQL Server und der erstellten
             // Klasse Queries
             services
                 .AddGraphQLServer()
-                .AddQueryType<Queries>();
+                .AddQueryType<Queries>()
+                .AddProjections();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,7 +57,7 @@ namespace HelloGraphQL
 
             // Fügt eine Endpointmiddleware für GraphQL hinzu
             app.UseEndpoints(endpoints => { endpoints.MapGraphQL(); });
-            
+
             // Fügt eine Endpointmiddleware für Voyager hinzu
             app.UseGraphQLVoyager(new VoyagerOptions()
             {
