@@ -6,24 +6,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de7425d6-3c80-4219-a923-cc5c9f64ee85" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HelloGraphQL/Migrations/20210824191122_AddLinkGroupToDb.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelloGraphQL/Migrations/20210824191122_AddLinkGroupToDb.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelloGraphQL/Migrations/20210825192330_AddLinkTableToDb.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelloGraphQL/Migrations/20210825192330_AddLinkTableToDb.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelloGraphQL/Migrations/20210825200842_AddModificationsToDb.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelloGraphQL/Migrations/20210825200842_AddModificationsToDb.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelloGraphQL/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelloGraphQL/Models/Link.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat.values" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/dataSources/63e0513f-b3cd-4f7d-8542-496d005c32c1/entities/entities.dat_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HelloGraphQL/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloGraphQL/Data/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HelloGraphQL/Data/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloGraphQL/GraphQL/Queries.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HelloGraphQL/GraphQL/Queries.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloGraphQL/HelloGraphQL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HelloGraphQL/HelloGraphQL.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelloGraphQL/Models/LinkGroup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HelloGraphQL/Models/LinkGroup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloGraphQL/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HelloGraphQL/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +45,7 @@
     <property name="settings.editor.selected.configurable" value="RiderNuGetOptionsPageId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.HelloGraphQL">
+  <component name="RunManager" selected="Docker.HelloGraphQL/docker-compose.yaml.sqlserver: Compose Deployment">
     <configuration name="HelloGraphQL" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/HelloGraphQL/HelloGraphQL.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net5.0" />
@@ -121,7 +107,8 @@
       <workItem from="1629741622788" duration="9926000" />
       <workItem from="1629828467543" duration="4801000" />
       <workItem from="1629833475993" duration="6460000" />
-      <workItem from="1629913212288" duration="7760000" />
+      <workItem from="1629913212288" duration="8047000" />
+      <workItem from="1630091446574" duration="1803000" />
     </task>
     <task id="LOCAL-00001" summary="Inital Code">
       <created>1629752154032</created>
@@ -165,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629841130627</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add new Table, add DBContext Factory, add Region support to GraphQL">
+      <created>1629922649083</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1629922649083</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +186,7 @@
     <MESSAGE value="InitialCode" />
     <MESSAGE value="Add DBContext" />
     <MESSAGE value="Tools für GraphQL (Endpunkte) hinzugefügt, Rootobjekt für GraphQL erzeugt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tools für GraphQL (Endpunkte) hinzugefügt, Rootobjekt für GraphQL erzeugt" />
+    <MESSAGE value="Add new Table, add DBContext Factory, add Region support to GraphQL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new Table, add DBContext Factory, add Region support to GraphQL" />
   </component>
 </project>
